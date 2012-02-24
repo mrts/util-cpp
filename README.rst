@@ -49,13 +49,16 @@ C++ development throughout the years:
 
 **Status**: production/stable.
 
-See `main test`_ for further details.
+It's intended to be used as a ``git`` submodule inside client project
+``include`` directory (therefore all files are directly in project root)::
 
-.. _`release_assert.h`: https://github.com/mrts/utilcpp/blob/master/utilcpp/release_assert.h
-.. _`disable_copy.h`: https://github.com/mrts/utilcpp/blob/master/utilcpp/disable_copy.h
+  git submodule add http://github.com/mrts/utilcpp include/utilcpp
+
+
+.. _`release_assert.h`: https://github.com/mrts/utilcpp/blob/master/release_assert.h
+.. _`disable_copy.h`: https://github.com/mrts/utilcpp/blob/master/disable_copy.h
 .. _`Boost scoped_ptr`: http://www.boost.org/libs/smart_ptr/scoped_ptr.htm
-.. _`scoped_ptr.h`: https://github.com/mrts/utilcpp/blob/master/utilcpp/scoped_ptr.h
-.. _`declarations.h`: https://github.com/mrts/utilcpp/blob/master/utilcpp/declarations.h
+.. _`scoped_ptr.h`: https://github.com/mrts/utilcpp/blob/master/scoped_ptr.h
+.. _`declarations.h`: https://github.com/mrts/utilcpp/blob/master/declarations.h
 .. _`singletons`: http://en.wikipedia.org/wiki/Singleton_pattern
 .. _`licenced under the Boost licence`: https://github.com/mrts/utilcpp/blob/master/LICENCE.rst
-.. _main test: https://github.com/mrts/utilcpp/blob/master/test/src/main.cpp

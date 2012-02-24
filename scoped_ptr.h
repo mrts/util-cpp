@@ -46,13 +46,11 @@ private:
 public:
 
     explicit scoped_ptr(T* p = 0) :
-        deleter(Deleter),
         px(p)
     {
     }
 
     explicit scoped_ptr(std::auto_ptr<T> p) :
-        deleter(Deleter),
         px(p.release())
     {
     }
@@ -65,7 +63,7 @@ public:
 
     ~scoped_ptr()
     {
-        deleter(px);
+        Deleter(px);
     }
 
     void reset(T* p = 0)
@@ -108,7 +106,6 @@ public:
 
 private:
 
-    void (*deleter)(T*);
     T* px;
 
     void operator==(const scoped_ptr&) const;
