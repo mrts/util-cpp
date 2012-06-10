@@ -52,7 +52,7 @@ C++ development throughout the years:
 It's intended to be used as a ``git`` submodule inside client project
 ``include`` directory (therefore all files are directly in project root)::
 
-  git submodule add http://github.com/mrts/utilcpp include/utilcpp
+  git submodule add http://github.com/mrts/util-cpp include/utilcpp
 
 
 .. _`release_assert.h`: https://github.com/mrts/utilcpp/blob/master/release_assert.h
