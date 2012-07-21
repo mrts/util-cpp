@@ -11,6 +11,13 @@
         Cls(const Cls&); \
         Cls& operator=(const Cls&);
 
+#define UTILCPP_DECLARE_INTERFACE_ALLOW_CONSTRUCTORS(Cls) \
+    public: \
+        virtual ~Cls() {} \
+    private: \
+        Cls(const Cls&); \
+        Cls& operator=(const Cls&);
+
 // singleton has no public constructors and provides access to the instance via
 // the static instance() method
 #define UTILCPP_DECLARE_SINGLETON(Cls) \
